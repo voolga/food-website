@@ -45,6 +45,9 @@ window.addEventListener('DOMContentLoaded', () => {
     // timer
 
     const deadline = '2023-10-11';
+    const deadlineMonth = deadline.slice(5, 7);
+    const deadlineDay = deadline.slice(8);
+
 
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -76,8 +79,11 @@ window.addEventListener('DOMContentLoaded', () => {
             hours = timer.querySelector('#hours'),
             minutes = timer.querySelector('#minutes'),
             seconds = timer.querySelector('#seconds'),
+            remainTime = document.querySelector('#remain-time'),
+            monthes = ['января', 'февраля', 'марта','апреля', 'мая', 'июня','июля', 'августа', 'сентября','октября', 'ноября', 'декабря'],
             timeInterval = setInterval(updateClock, 1000);
 
+        remainTime.innerHTML = `${deadlineDay} ${monthes[deadlineMonth - 1]}`;
         updateClock();
         function updateClock() {
             const t = getTimeRemaining(endtime);
