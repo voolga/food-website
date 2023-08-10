@@ -63,9 +63,9 @@ window.addEventListener('DOMContentLoaded', () => {
             remainTime.innerHTML = 'Акция завершена'
         } else {
             days = Math.floor(t / (24 * 60 * 60 * 1000)),
-            hours = Math.floor((t / (1000 * 60 * 60)) % 24),
-            minutes = Math.floor((t / 1000 / 60) % 60),
-            seconds = Math.floor((t / 1000) % 60);
+                hours = Math.floor((t / (1000 * 60 * 60)) % 24),
+                minutes = Math.floor((t / 1000 / 60) % 60),
+                seconds = Math.floor((t / 1000) % 60);
         }
 
         return {
@@ -112,4 +112,26 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     setClock('.timer', deadline);
+
+    // modal window
+
+    const modal = document.querySelector('.modal'),
+        openModalBtn = document.querySelectorAll('[data-modal]'),
+        closeModalBtn = modal.querySelector('[data-close]');
+
+    openModalBtn.forEach((item) => {
+        item.addEventListener('click', () => {
+            modal.classList.toggle('show');
+            document.body.style.overflow = 'hidden';
+        })
+    })
+
+    closeModalBtn.addEventListener('click', () => {
+        modal.classList.toggle('show');
+        document.body.style.overflow = '';
+    })
+
+
+
+
 });
