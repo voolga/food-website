@@ -124,14 +124,25 @@ window.addEventListener('DOMContentLoaded', () => {
             modal.classList.toggle('show');
             document.body.style.overflow = 'hidden';
         })
-    })
+    });
 
-    closeModalBtn.addEventListener('click', () => {
+    function closeModal() {
         modal.classList.toggle('show');
         document.body.style.overflow = '';
-    })
+    }
 
+    closeModalBtn.addEventListener('click', closeModal);
 
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
 
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape' && modal.classList.contains('show')) {
+            closeModal();
 
+        }
+    });
 });
