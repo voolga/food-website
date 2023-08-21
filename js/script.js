@@ -119,11 +119,14 @@ window.addEventListener('DOMContentLoaded', () => {
         openModalBtn = document.querySelectorAll('[data-modal]'),
         closeModalBtn = modal.querySelector('[data-close]');
 
+    function openModal() {
+        modal.classList.toggle('show');
+        document.body.style.overflow = 'hidden';
+        clearInterval(modalTimerId);
+    };
+
     openModalBtn.forEach((item) => {
-        item.addEventListener('click', () => {
-            modal.classList.toggle('show');
-            document.body.style.overflow = 'hidden';
-        })
+        item.addEventListener('click', openModal)
     });
 
     function closeModal() {
@@ -143,6 +146,8 @@ window.addEventListener('DOMContentLoaded', () => {
         if (e.code === 'Escape' && modal.classList.contains('show')) {
             closeModal();
 
-        }
+        };
     });
+
+    const modalTimerId = setTimeout(openModal, 5000);
 });
