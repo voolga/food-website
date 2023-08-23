@@ -170,7 +170,7 @@ window.addEventListener('DOMContentLoaded', () => {
             this.descr = descr;
             this.price = price;
             this.parent = document.querySelector(parentSelector);
-            this.transfer = 4,1;
+            this.transfer = 4;
             this.changeToPLN();
         }
 
