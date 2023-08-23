@@ -28,3 +28,6 @@ Used in JS:
 - scrollHeight
 - clientHeight
 - scrollY
+- class constructor
+- createElement()
+- append()
