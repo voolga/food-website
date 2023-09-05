@@ -12,6 +12,7 @@ Done parts:
 2.7. add rest operator to menu card for taking data of class-name from backend, add default value 
 2.8. add POST requests to server for sending data from forms, server.php
 2.9. add reset data forms and delete users' message after 2 sec
+2.10. change forn data to JSON
 
 
 Another in progress
@@ -39,3 +40,4 @@ Used in JS:
 - new XMLHttpRequest() (open, send)
 - form.reset()
 - event.preventDefault()
+- JSON.stringify()
