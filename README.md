@@ -13,7 +13,7 @@ Done parts:
 2.8. add POST requests to server for sending data from forms, server.php
 2.9. add reset data forms and delete users' message after 2 sec
 2.10. change forn data to JSON
-2.11. create Thanks ModalDialog
+2.11. create Thanks ModalDialog, closing them by clicking to "x"
 
 
 Another in progress

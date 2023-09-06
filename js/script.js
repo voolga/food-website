@@ -116,8 +116,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // modal window
 
     const modal = document.querySelector('.modal'),
-        openModalBtn = document.querySelectorAll('[data-modal]'),
-        closeModalBtn = modal.querySelector('[data-close]');
+        openModalBtn = document.querySelectorAll('[data-modal]');
 
     function openModal() {
         modal.classList.toggle('show');
@@ -132,12 +131,10 @@ window.addEventListener('DOMContentLoaded', () => {
     function closeModal() {
         modal.classList.toggle('show');
         document.body.style.overflow = '';
-    }
-
-    closeModalBtn.addEventListener('click', closeModal);
+    };
 
     modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
+        if (event.target === modal || event.target.getAttribute('data-close') == '') {
             closeModal();
         }
     });
@@ -156,7 +153,7 @@ window.addEventListener('DOMContentLoaded', () => {
             openModal();
             window.removeEventListener('scroll', showModaByScroll);
         }
-    }
+    };
 
     // window.addEventListener('scroll', showModaByScroll);
 
@@ -289,7 +286,7 @@ window.addEventListener('DOMContentLoaded', () => {
             })
         })
 
-    }
+    };
 
 
     function showThanksModal(message) {
@@ -305,7 +302,7 @@ window.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         document.querySelector('.modal').append(thanksModal);
-    }
+    };
 
 
 });
