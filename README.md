@@ -44,3 +44,4 @@ Used in JS:
 - form.reset()
 - event.preventDefault()
 - JSON.stringify()
+- .insertAdjacentElement()
