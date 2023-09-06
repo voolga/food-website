@@ -130,7 +130,8 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     function closeModal() {
-        modal.classList.toggle('show');
+        modal.classList.remove('show');
+        modal.classList.add('hide');
         document.body.style.overflow = '';
     };
 
@@ -147,7 +148,7 @@ window.addEventListener('DOMContentLoaded', () => {
         };
     });
 
-    const modalTimerId = setTimeout(openModal, 500000);
+    const modalTimerId = setTimeout(openModal, 50000);
 
     function showModaByScroll() {
         if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
