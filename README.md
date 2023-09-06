@@ -15,6 +15,7 @@ Done parts:
 2.10. change forn data to JSON
 2.11. create Thanks ModalDialog, closing them by clicking to "x"
 2.12. add autoclosing thanks modal dialog, debug re-opening of modal window
+2.13. add animation spinner instead of status "loading" after sending the data
 
 
 Another in progress
