@@ -14,6 +14,7 @@ Done parts:
 2.9. add reset data forms and delete users' message after 2 sec
 2.10. change forn data to JSON
 2.11. create Thanks ModalDialog, closing them by clicking to "x"
+2.12. add autoclosing thanks modal dialog, debug re-opening of modal window
 
 
 Another in progress
