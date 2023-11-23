@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // timer
 
-    const deadline = '2023-11-10';
+    const deadline = '2024-05-20';
     const deadlineMonth = deadline.slice(5, 7);
     const deadlineDay = deadline.slice(8);
     const remainTime = document.querySelector('#remain-time');
