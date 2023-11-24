@@ -34,6 +34,8 @@ Completed parts:
 
 2.13. add animation spinner instead of status "loading" after sending the data
 
+2.14. add POST requests for data from forms
+
 
 
 Another in progress
@@ -58,7 +60,8 @@ Used in JS:
 - createElement()
 - append()
 - ...rest
-- new XMLHttpRequest() (open, send)
+- (new XMLHttpRequest() (open, send)) - old
+- fetch.then.catch.finally
 - form.reset()
 - event.preventDefault()
 - JSON.stringify()
