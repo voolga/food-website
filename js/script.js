@@ -278,11 +278,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
       const formData = new FormData(form);
 
-        const obj = {};
-        formData.forEach(function (value, key) {
-          obj[key] = value;
-        });
-
+      const obj = {};
+      formData.forEach(function (value, key) {
+        obj[key] = value;
+      });
 
       fetch("server.php", {
         method: "POST",
@@ -350,4 +349,8 @@ window.addEventListener("DOMContentLoaded", () => {
   // })
   // .then(response => response.json())
   // .then(json => console.log(json))
+
+
+
+
 });

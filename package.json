@@ -1,0 +1,22 @@
+{
+  "name": "food-website",
+  "version": "1.0.0",
+  "description": "Project that is created and amended during the training course - in progress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voolga/food-website.git"
+  },
+  "author": "voolga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/voolga/food-website/issues"
+  },
+  "homepage": "https://github.com/voolga/food-website#readme",
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
+}
