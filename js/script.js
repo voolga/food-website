@@ -225,6 +225,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
   // forms
 
   const forms = document.querySelectorAll("form");
