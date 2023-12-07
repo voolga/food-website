@@ -1,5 +1,8 @@
 # food-website
 
+! To display dynamically created menu-cards, you need to run json-server in the console as follows:
+json-server db.json
+
 Used in JS:
 
 - fetch.then.catch.finally
