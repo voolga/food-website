@@ -119,7 +119,6 @@ window.addEventListener("DOMContentLoaded", () => {
   setClock(".timer", deadline);
 
   // modal window
-
   const modal = document.querySelector(".modal"),
     openModalBtn = document.querySelectorAll("[data-modal]");
 
@@ -220,11 +219,17 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   getResources("http://localhost:3000/menu").then((data) => {
-    data.forEach(({img, altimg, title, descr, price}) => {
-      new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
+    data.forEach(({ img, altimg, title, descr, price }) => {
+      new MenuCard(
+        img,
+        altimg,
+        title,
+        descr,
+        price,
+        ".menu .container"
+      ).render();
     });
   });
-
 
   // forms
 
@@ -264,13 +269,10 @@ window.addEventListener("DOMContentLoaded", () => {
             `;
       form.insertAdjacentElement("afterend", statusMessage);
 
-      // старый способ, уже не используется
-
       // const request = new XMLHttpRequest();
       // request.open('POST', 'server.php');
       // request.setRequestHeader('Content-type', 'multipart/form-data');
-
-      //   request.setRequestHeader("Content-type", "application/json");
+      // request.setRequestHeader("Content-type", "application/json");
 
       const formData = new FormData(form);
       console.log(formData);

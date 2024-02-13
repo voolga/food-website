@@ -13,8 +13,6 @@ const slidesQty = slides.length;
 let offset = 0;
 const dots = [];
 
-// Animated version of slider
-
 slidesField.style.width = slidesQty * 100 + "%";
 slidesField.style.display = "flex";
 slidesField.style.transition = "0.5s all";
@@ -105,10 +103,8 @@ prevArr.addEventListener("click", () => {
 });
 
 dots.forEach((dot) => {
-  // dot.style.opacity = 0.5;
   dot.addEventListener("click", (e) => {
     const dotTo = e.target.getAttribute("data-dot-to");
-    // console.log(dotTo);
     slideIndex = dotTo;
     offset = (dotTo - 1) * parseInt(width);
     slidesField.style.transform = `translateX(-${offset}px)`;
@@ -119,15 +115,10 @@ dots.forEach((dot) => {
       currentSlide.textContent = slideIndex;
     }
 
-
     dots.forEach((dot) => {
       dot.style.opacity = 0.5;
     });
   
     dots[slideIndex - 1].style.opacity = 1;
-
-
-
-
   });
 });

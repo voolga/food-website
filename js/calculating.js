@@ -17,7 +17,6 @@ function initLocalSettings(selector, activeClass) {
       el.classList.add(activeClass);
     }
   });
-
 }
 
 initLocalSettings(
