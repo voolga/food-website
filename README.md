@@ -1,6 +1,7 @@
 # food-website
+## !Important
 
-**To display dynamically created menu-cards, you need to run json-server in the console as follows:
+**To display dynamically created menu-cards and run calories calculator, you need to run json-server in the console as follows:
 json-server db.json**
 
 Used in JS:
